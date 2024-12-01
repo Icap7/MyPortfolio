@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Isyraf</title>
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo"><a href="#home">ISYRAF</a></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</sa></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-content">
+      <h1>Hi, I’m MUHAMMAD ISYRAF AZRI BIN ASHA'RI</h1>
+      <p>Programmer | Student </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-container">
+      <img src="MUHAMMADISYRAF.png" alt="[Your Name]" class="profile-pic">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m a student that currently studied in UiTM Shah Alam. The course that I take was Degree in Science Computer (Multimedia).
+          Before this, I studied at UiTM Kuala Terengganu Chendering and the course is CS110 Science Computer in diploma. 
+          The goal of mine is I want to have a suitable job so that I can learn new thing as much as possible.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <!-- HTML Skill -->
+      <div class="skill">
+        <div class="skill-info">
+          <div class="skill-logo-name">
+            <img src="HTML.png" alt="HTML Logo" class="skill-logo">
+            <span>HTML</span>
+          </div>
+          <span class="skill-percentage">90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 90%;"></div>
+        </div>
+      </div>
+  
+      <!-- CSS Skill -->
+      <div class="skill">
+        <div class="skill-info">
+          <div class="skill-logo-name">
+            <img src="CSS.png" alt="CSS Logo" class="skill-logo">
+            <span>CSS</span>
+          </div>
+          <span class="skill-percentage">80%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 80%;"></div>
+        </div>
+      </div>
+  
+      <!-- JavaScript Skill -->
+      <div class="skill">
+        <div class="skill-info">
+          <div class="skill-logo-name">
+            <img src="JS.png" alt="JavaScript Logo" class="skill-logo">
+            <span>JavaScript</span>
+          </div>
+          <span class="skill-percentage">75%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 75%;"></div>
+        </div>
+      </div>
+  
+      <!-- Python Skill -->
+      <div class="skill">
+        <div class="skill-info">
+          <div class="skill-logo-name">
+            <img src="Phyton.png" alt="Python Logo" class="skill-logo">
+            <span>Python</span>
+          </div>
+          <span class="skill-percentage">85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 85%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-info">
+          <div class="skill-logo-name">
+            <img src="Java.png" alt="JavaScript Logo" class="skill-logo">
+            <span>Java</span>
+          </div>
+          <span class="skill-percentage">64%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 64%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Projects Section -->
+<section id="projects">
+  <div class="projects-container">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-item">
+        <h3>In Game Purchase Store and Services</h3>
+        <p>Its a website to provide online store where user can buy in-game cash for variety of video games.
+           It use HTML, CSS and also JavaScript. I make "about me" section and also a little bit of report for this project.</p>
+        <button onclick="openModal('project1')">View Screenshots</button>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-item">
+        <h3>Rental Bookstore System</h3>
+        <p>It's a system where user can borrow book from library, user can choose book that they want to rent, the fee is calculated
+           based on the specific book times how many days they borrow the book. This system use C++ languange. I make code for calculation fee for the book.</p>
+           
+        <button onclick="openModal('project2')">View Screenshots</button>
+      </div>
+
+      <div class="project-item">
+        <h3>Blender Project</h3>
+        <p>I desingn a pickup truck using blender. Its very hard because need to build it from scrath. However, i manage to complete it.</p>
+    
+        <button onclick="openModal('project3')">View Screenshots</button>
+      </div>
+
+      <!-- Add more projects as needed -->
+    </div>
+  </div>
+
+  <!-- Modals for Project Screenshots -->
+  <!-- Modal for Project 1 -->
+  <div id="project1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('project1')">&times;</span>
+      <h3>Project Title 1 - Screenshots</h3>
+      <div class="modal-images">
+        <img src="mainPage.png" alt="Screenshot 1A">
+        <img src="RegistertPage.png" alt="Screenshot 1B">
+        <img src="SideBar.png" alt="Screenshot 1C">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Project 2 -->
+  <div id="project2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('project2')">&times;</span>
+      <h3>Project Title 2 - Screenshots</h3>
+      <div class="modal-images">
+        <img src="Project 126.jpg" alt="Screenshot 2A">
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <div id="project3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('project3')">&times;</span>
+    <h3>Project Title 3 - Screenshots</h3>
+    <div class="modal-images">
+      <img src="truck.png" alt="Screenshot 2A">
+      <img src="truck2.png" alt="Screenshot 1B">
+    </div>
+  </div>
+ </div>
+ </section>
+
+ <script src="ProjectSection.js"></script>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-icons">
+      <a href="mailto:isyrafazri1@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/muhammad-isyraf-azri-bin-asha-ri-905451248/" class="icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+</body>
+</html>
